@@ -1,1 +1,45 @@
-﻿<Project Sdk="Microsoft.NET.Sdk" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Package metadata -->
+    <AssemblyName>Sweatbox.SharedKernel</AssemblyName>
+    <PackageId>Sweatbox.SharedKernel</PackageId>
+    <Title>Sweatbox.SharedKernel</Title>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Chris Carter</Authors>
+    <Company>github.com/chrisjamiecarter</Company>
+    <Description>A shared kernel library providing common base types and abstractions for use across projects.</Description>
+    <Summary>A shared kernel library with common base types and abstractions</Summary>
+    <PackageProjectUrl>https://github.com/chrisjamiecarter/SharedKernel</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/chrisjamiecarter/SharedKernel</RepositoryUrl>
+    <PackageTags>Shared Kernel;SharedKernel;EntityBase</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <Version>0.0.1</Version>
+    <PackageReleaseNotes>
+      * Initial release
+    </PackageReleaseNotes>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <DocumentationFile>bin\$(Configuration)\Sweatbox.SharedKernel.xml</DocumentationFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <!-- Source Link — lets consumers step into your source while debugging -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <!-- Deterministic builds for CI -->
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+    
+</Project>

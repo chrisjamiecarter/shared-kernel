@@ -7,4 +7,7 @@
   <Folder Name="/src/">
     <Project Path="src/SharedKernel/SharedKernel.csproj" Id="df60711c-e6d6-4f81-ae54-c0944c00f051" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SharedKernel.Tests/SharedKernel.Tests.csproj" Id="3e173d28-db63-45a9-bebe-80b6d0052e63" />
+  </Folder>
 </Solution>
