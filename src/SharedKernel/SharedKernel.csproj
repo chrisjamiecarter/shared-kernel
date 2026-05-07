@@ -5,32 +5,37 @@
     <AssemblyName>Sweatbox.SharedKernel</AssemblyName>
     <PackageId>Sweatbox.SharedKernel</PackageId>
     <Title>Sweatbox.SharedKernel</Title>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Chris Carter</Authors>
-    <Company>github.com/chrisjamiecarter</Company>
-    <Description>A shared kernel library providing common base types and abstractions for use across projects.</Description>
-    <Summary>A shared kernel library with common base types and abstractions</Summary>
+    
+    <Authors>Chris Carter (Sweatbox)</Authors>
+    <Company>Chris Carter (Sweatbox)</Company>
+    
+    <Description>
+      A shared kernel library providing common base types and abstractions for use across projects.
+    </Description>
+    <Summary>A shared kernel library with common base types and abstractions.</Summary>
+    
+    <PackageTags>Shared Kernel;SharedKernel;EntityBase</PackageTags>
+    
     <PackageProjectUrl>https://github.com/chrisjamiecarter/SharedKernel</PackageProjectUrl>
     <RepositoryUrl>https://github.com/chrisjamiecarter/SharedKernel</RepositoryUrl>
-    <PackageTags>Shared Kernel;SharedKernel;EntityBase</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    
     <PackageIcon>icon.png</PackageIcon>
-    <Version>0.0.1</Version>
-    <PackageReleaseNotes>
-      * Initial release
-    </PackageReleaseNotes>
-    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-    <DocumentationFile>bin\$(Configuration)\Sweatbox.SharedKernel.xml</DocumentationFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <DocumentationFile>bin\$(Configuration)\Sweatbox.SharedKernel.xml</DocumentationFile>
 
+    <EnablePackageValidation>true</EnablePackageValidation>
+    
     <!-- Source Link — lets consumers step into your source while debugging -->
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-
-    <!-- Deterministic builds for CI -->
-    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+    <DebugType>portable</DebugType>
+    
   </PropertyGroup>
 
   <ItemGroup>
