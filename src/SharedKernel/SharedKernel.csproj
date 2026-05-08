@@ -14,18 +14,18 @@
     </Description>
     <Summary>A shared kernel library with common base types and abstractions.</Summary>
     
-    <PackageTags>Shared Kernel;SharedKernel;EntityBase</PackageTags>
-    
-    <PackageProjectUrl>https://github.com/chrisjamiecarter/SharedKernel</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/chrisjamiecarter/SharedKernel</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    
     <PackageIcon>icon.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/chrisjamiecarter/SharedKernel</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>dotnet;Shared Kernel;SharedKernel;EntityBase</PackageTags>
     
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/chrisjamiecarter/SharedKernel</RepositoryUrl>
+        
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-    <DocumentationFile>bin\$(Configuration)\Sweatbox.SharedKernel.xml</DocumentationFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Sweatbox.SharedKernel.xml</DocumentationFile>
 
     <EnablePackageValidation>true</EnablePackageValidation>
     
@@ -35,7 +35,10 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <DebugType>portable</DebugType>
-    
+
+    <!-- Deterministic builds for CI -->
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -44,7 +47,7 @@
   
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
-    <None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
+    <None Include="icon.png" Pack="true" Visible="false" />
   </ItemGroup>
     
 </Project>
