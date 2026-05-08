@@ -38,14 +38,7 @@ jobs:
         run: dotnet test "${{ env.SOLUTION_FILE }}" --configuration Release --no-build --no-restore --verbosity normal
 
       - name: Pack
-        run: |
-          VERSION=${GITHUB_REF_NAME#v}
-          dotnet pack "${{ env.SOLUTION_FILE }}" \
-            --configuration Release \
-            --no-build \
-            --no-restore \
-            --output "${{ env.PACK_OUTPUT }}" \
-            /p:Version=$VERSION
+        run: dotnet pack "${{ env.SOLUTION_FILE }}" --configuration Release --no-build --no-restore --output "${{ env.PACK_OUTPUT }}"
 
       - name: NuGet login (OIDC Trusted Publishing)
         uses: NuGet/login@v1

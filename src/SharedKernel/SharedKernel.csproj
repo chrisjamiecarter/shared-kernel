@@ -13,7 +13,6 @@
       A shared kernel library providing common base types and abstractions for use across projects.
     </Description>
     <Summary>A shared kernel library with common base types and abstractions.</Summary>
-    <Version>0.0.2</Version>
     
     <PackageIcon>icon.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
