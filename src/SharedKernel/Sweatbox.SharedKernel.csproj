@@ -13,13 +13,13 @@
       A shared kernel library providing common base types and abstractions for use across projects.
     </Description>
     <Summary>A shared kernel library with common base types and abstractions.</Summary>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     
     <PackageIcon>icon.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/chrisjamiecarter/SharedKernel</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageTags>dotnet;Shared Kernel;SharedKernel;EntityBase</PackageTags>
+    <PackageTags>dotnet;Shared Kernel;SharedKernel;EntityBase;Entity;Schema</PackageTags>
     
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/chrisjamiecarter/SharedKernel</RepositoryUrl>

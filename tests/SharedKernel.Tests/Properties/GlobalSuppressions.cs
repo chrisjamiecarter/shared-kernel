@@ -5,4 +5,4 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Naming", "CA1707:Identifiers should not contain underscores", Justification = "Identifiers should contain underscores for test methods.", Scope = "namespaceanddescendants", Target = "~N:SharedKernel.Tests")]
+[assembly: SuppressMessage("Naming", "CA1707:Identifiers should not contain underscores", Justification = "Identifiers should contain underscores for test methods.", Scope = "namespaceanddescendants", Target = "~N:Sweatbox.SharedKernel.Tests")]

@@ -1,4 +1,4 @@
-﻿namespace SharedKernel;
+﻿namespace Sweatbox.SharedKernel;
 
 /// <summary>
 /// A base clase for entities.

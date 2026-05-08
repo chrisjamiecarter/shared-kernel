@@ -1,4 +1,4 @@
-﻿namespace SharedKernel.Tests;
+﻿namespace Sweatbox.SharedKernel.Tests;
 
 /// <summary>
 /// Contains unit tests for the <c>EntityBase&lt;TId&gt;</c> class.
