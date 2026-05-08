@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\SharedKernel\Sweatbox.SharedKernel.csproj" />
+    <ProjectReference Include="..\..\src\Sweatbox.SharedKernel\Sweatbox.SharedKernel.csproj" />
   </ItemGroup>
 
   <ItemGroup>
